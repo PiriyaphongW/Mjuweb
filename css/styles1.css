@@ -1,0 +1,355 @@
+
+
+/*
+	Accordion Toggle (Programs)
+----------------------------------------------*/
+/*
+.accordion-custom {
+	
+}
+.accordion-custom .card,
+.accordion-custom .card-header:first-child {
+    border-radius: 0;
+}
+.accordion-custom .card {
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 0;
+}
+.accordion-custom .card-header {
+	padding: 0;
+	background-color: transparent;
+}
+.accordion-custom .card-header .btn {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	text-align: left;
+	color: #000;
+	background-color: #f5f5f5;
+	transition: all 0.3s ease;
+}
+.accordion-custom .card-header .btn.collapsed {
+	background-color: #fff;
+	color: #000;
+}
+.accordion-custom .card-header .btn.collapsed:hover {
+	background-color: #f8f9fa;
+}
+.accordion-custom .card-header .post-media {
+	position: absolute;
+}
+.accordion-custom .card-header .post-entry {
+	position: relative;
+	padding-left: 30px;
+}
+.accordion-custom .card-header .text-title-primary {
+	font-size: 1.25em;
+	line-height: 28px;
+	color: #b43b6b;
+	margin-bottom: 0;
+}
+.accordion-custom .card-header .text-title-secondary {
+	font-size: 0.75em;
+	color: #000;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+.accordion-custom .card-header .btn .post-entry::before {
+	content: "\f067";
+	font-family: 'Font Awesome\ 5 Free';
+  	font-weight: 900;
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	font-size: 0.875rem;
+	color: #b43b6b;
+	text-align: left;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	  	 -o-transform: rotate(-45deg);
+	  	    transform: rotate(-45deg);
+	transition: all 0.3s ease;
+}
+.accordion-custom .card-header .btn.collapsed .post-entry::before {
+	-webkit-transform: rotate(0);
+	   -moz-transform: rotate(0);
+	  	 -o-transform: rotate(0);
+	  	    transform: rotate(0);
+	color: #000;
+}
+.accordion-custom .card-header .btn.collapsed .text-title-primary {
+	color: #000;
+}
+.accordion-custom .card-header .btn.collapsed .text-title-secondary {
+	color: rgba(0,0,0,0.5);
+}
+.accordion-custom .card-body {
+	padding: 30px 0;
+	font-size: 0.875em;
+	line-height: 1.75;
+}
+.accordion-custom .card-body .course-entry {
+	margin: 0 0 1.5em 0;
+	padding: 0;
+}
+.accordion-custom .card-body .course-entry ul {
+	margin: 0 0 0.5em 0;
+}
+.accordion-custom .card-body .course-entry ul li, 
+.accordion-custom .card-body .course-entryol li {
+    margin-top: 5px;
+}
+.accordion-custom:not(.lang-en) .card-body h2,
+.accordion-custom:not(.lang-en) .card-body h3,
+.accordion-custom:not(.lang-en) .card-body h4,
+.accordion-custom:not(.lang-en) .card-body h5,
+.accordion-custom:not(.lang-en) .card-body h6 {
+	font-family: 'chulalongkornregular', sans-serif; 
+}
+.accordion-custom:not(.lang-en) .card-body h2 strong,
+.accordion-custom:not(.lang-en) .card-body h3 strong,
+.accordion-custom:not(.lang-en) .card-body h4 strong,
+.accordion-custom:not(.lang-en) .card-body h5 strong,
+.accordion-custom:not(.lang-en) .card-body h6 strong {
+	font-family: 'chulalongkornbold', sans-serif; 
+}
+.accordion-custom .card-body h3 {
+	font-size: 1.125em;
+	line-height: 1.75;
+	margin-bottom: 5px;
+}
+.accordion-custom .card-body h4 {
+	font-size: 1.125em;
+	line-height: 1.75;
+	margin-bottom: 3px;
+}
+.accordion-custom .card-body h5 {
+	font-size: 0.875em;
+	line-height: 1.75;
+	margin-bottom: 5px;
+}
+.accordion-custom .card-body p {
+	margin-bottom: 5px;
+}
+.accordion-custom .card-body p + h3,
+.accordion-custom .card-body p + h4,
+.accordion-custom .card-body p + h5,
+.accordion-custom .card-body p + h6 {
+	margin-top: 1em;
+}
+@media (min-width: 768px) {
+	.accordion-custom .card-header button,
+	.accordion-custom .card-header .btn {
+		padding: 20px 0;
+	}
+	.accordion-custom .card-header .post-entry {
+		padding-left: 50px;
+	}
+	.accordion-custom .card-header .text-title-primary {
+		font-size: 1.375em;
+	}
+	.accordion-custom .card-body {
+		padding: 30px 0 50px 0;
+		font-size: 1em;
+	}
+	.accordion-custom:not(.lang-en) .card-body h3 {
+		font-size: 1.25em;
+	}
+	.accordion-custom:not(.lang-en) .card-body h4 {
+		font-size: 1.125em;
+	}
+	.accordion-custom:not(.lang-en) .card-body h5 {
+		font-size: 1em;
+	}
+	.accordion-custom .card-body .post-entry {
+		padding-left: 50px;
+	}
+}
+@media (min-width: 992px) {
+	.accordion-custom .card-header .text-title-primary {
+		font-size: 1.375em;
+	}
+}
+*/
+
+
+/*----------
+
+	Accordion
+
+*************************************************************/
+.accordion-item + .accordion-item,
+.accordion-option + .accordion-option {
+	margin-top: 10px;
+}
+.accordion-option {
+  	position: relative;
+}
+.accordion-option .accordion-toggle {
+  	display: none;
+}
+.accordion-option .accordion-title,
+.accordion-option .accordion-content {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.accordion-option .accordion-title {
+	display: block;
+	margin: 0;
+  	padding: 13px 54px 13px 18px;
+	border-radius: 2px;
+	border: 2px solid #de5c8e;
+	background-color: #f1e2e3;
+  	color: #000;
+	font-size: 1.125em;
+  	font-weight: normal;
+	line-height: 24px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.no-touchevents .accordion-option .accordion-title:hover {
+	border-color: #b43b6b;
+	background-color: #fff;
+	color: #b43b6b;
+}
+.accordion-option .accordion-title::after, 
+.accordion-option .accordion-title::before {
+  	content: '';
+  	position: absolute;
+	top: 19px;
+  	right: 26px;
+  	width: 2px;
+  	height: 12px;
+  	background-color: #323441;
+}
+.accordion-option .accordion-title::after {
+  	-webkit-transform: rotate(90deg);
+          	transform: rotate(90deg);
+}
+.accordion-option .accordion-content {
+	display: none;
+	padding: 18px;
+	border: 2px solid #b43b6b;
+	border-top: none;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: #fff;
+	font-size: 1em;
+  	overflow: hidden;
+}
+.accordion-option .accordion-content strong {
+	color: #000;
+}
+.accordion-option .accordion-content a {
+	font-weight: bold;
+}
+.accordion-option .accordion-toggle:checked + .accordion-title {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-color: #b43b6b;
+	background-color: #b43b6b;
+	color: #fff;
+}
+.accordion-option .accordion-toggle:checked + .accordion-title + .accordion-content {
+	display: block;
+}
+.accordion-option .accordion-toggle:checked + .accordion-title::before {
+	background-color: #fff;
+  	-webkit-transform: rotate(90deg) !important;
+          	transform: rotate(90deg) !important;
+}
+.accordion-option .accordion-toggle:checked + .accordion-title::after {
+	background-color: #fff;
+}
+@media (min-width: 576px) {
+	.accordion-option .accordion-title {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.accordion-option .accordion-title::after, 
+	.accordion-option .accordion-title::before {
+		top: 21px;
+	}
+}
+@media (min-width: 768px) {
+	.accordion-option .accordion-title {
+		padding-top: 18px;
+		padding-bottom: 18px;
+		padding-left: 18px;
+		font-size: 1.25em;
+	}
+	.accordion-option .accordion-title::after, 
+	.accordion-option .accordion-title::before {
+		top: 24px;
+	}
+	.accordion-option .accordion-content {
+		padding: 25px 18px;
+	}
+}
+@media (min-width: 992px) {
+	.accordion-option .accordion-title {
+		padding-left: 28px;
+	}
+	.accordion-option .accordion-content {
+		padding: 30px 28px;
+	}
+}
+
+.accordion-wrapper-list .accordion-title {
+	padding-left: 52px;
+}
+.accordion-wrapper-list .accordion-title small {
+	display: block;
+	margin-top: 0.5em;
+	font-size: 0.625em;
+	line-height: 1.25;
+	color: rgba(0,0,0,0.5);
+}
+.accordion-wrapper-list .accordion-option .accordion-toggle:checked + .accordion-title small {
+	color: rgba(255,255,255,0.5);
+}
+.accordion-wrapper-list .accordion-title .accordion-title-no {
+	position: absolute;
+	left: 18px;
+}
+.accordion-wrapper-list .accordion-content h3,
+.accordion-wrapper-list .accordion-content h3 strong {
+	color: #b43b6b;
+	margin-bottom: 0.5em;
+}
+.accordion-wrapper-list .accordion-content h4 {
+	margin-bottom: 0.25em;
+}
+.accordion-wrapper-list .accordion-content ul,
+.accordion-wrapper-list .accordion-content ul > li {
+	list-style: none;
+}
+.accordion-wrapper-list .course-entry {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.accordion-wrapper-list .course-entry li + li {
+	margin-top: 0.125em;
+}
+.accordion-wrapper-list .accordion-content .wpcf-field-custom-content-contact p,
+.accordion-wrapper-list .accordion-content .wpcf-field-custom-content-contact-2 p {
+	margin-bottom: 1em;
+}
+@media (min-width: 768px) {
+	.accordion-wrapper-list .course-entry ul  {
+		padding-left: 40px;
+	}
+}
+@media (min-width: 992px) {
+	.accordion-wrapper-list .accordion-title {
+		padding-left: 62px;
+	}
+	.accordion-wrapper-list .accordion-title .accordion-title-no {
+		left: 28px;
+	}
+}
